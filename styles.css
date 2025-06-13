@@ -1,0 +1,128 @@
+/* === Reset básico === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Cuerpo === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 40px;
+}
+
+/* === Encabezado === */
+h1 {
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+/* === Formulario de entrada === */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* === Botón Añadir === */
+#addButton {
+  background-color: #28a745;
+  color: white;
+  margin-left: 10px;
+}
+
+#addButton:hover {
+  background-color: #218838;
+}
+
+/* === Lista === */
+ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+}
+
+li span {
+  flex-grow: 1;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* === Texto tachado === */
+.tachado {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
+/* === Botón "Seleccionado" === */
+li button:nth-child(2) {
+  background-color: #007bff;
+  color: white;
+}
+
+li button:nth-child(2):hover {
+  background-color: #0056b3;
+}
+
+/* === Botón "Eliminar" === */
+li button:nth-child(3) {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 10px;
+}
+
+li button:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+/* === Contenedor para título + imagen gif === */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #0077cc;
+}
+
+.gif-compra {
+  width: 60px;
+  height: auto;
+}
